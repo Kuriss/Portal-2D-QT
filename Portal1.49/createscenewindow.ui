@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateSceneWindow</class>
+ <widget class="QMainWindow" name="CreateSceneWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>654</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="CreateGraphicsView" name="gView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>351</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actEditFront"/>
+   <addaction name="actEditBack"/>
+   <addaction name="separator"/>
+   <addaction name="actGroup"/>
+   <addaction name="actGroupBreak"/>
+   <addaction name="separator"/>
+   <addaction name="actEditDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actSave"/>
+   <addaction name="actPlay"/>
+   <addaction name="actQuit"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="blackBrick"/>
+   <addaction name="whiteBrick"/>
+   <addaction name="actResetStart"/>
+   <addaction name="actResetEnd"/>
+  </widget>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/redmi airdots.jpg</normaloff>:/images/images/redmi airdots.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string> 退出系统</string>
+   </property>
+  </action>
+  <action name="actGroupBreak">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/bg4.png</normaloff>:/images/images/bg4.png</iconset>
+   </property>
+   <property name="text">
+    <string>打散</string>
+   </property>
+   <property name="toolTip">
+    <string>打散</string>
+   </property>
+  </action>
+  <action name="actEditDelete">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/title_sprite.png</normaloff>:/images/images/title_sprite.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除选中的图元</string>
+   </property>
+  </action>
+  <action name="actGroup">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/icon.png</normaloff>:/images/images/icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>组合</string>
+   </property>
+   <property name="toolTip">
+    <string>组合</string>
+   </property>
+  </action>
+  <action name="actEditBack">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/sdfusa.jpg</normaloff>:/images/images/sdfusa.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>左上角</string>
+   </property>
+   <property name="toolTip">
+    <string>左上角</string>
+   </property>
+  </action>
+  <action name="actEditFront">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/safd.jpg</normaloff>:/images/images/safd.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>点击方块</string>
+   </property>
+   <property name="toolTip">
+    <string>居于最前面</string>
+   </property>
+  </action>
+  <action name="actPlay">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/bg11.png</normaloff>:/images/images/bg11.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存并开始游戏</string>
+   </property>
+   <property name="toolTip">
+    <string>保存并开始游戏</string>
+   </property>
+  </action>
+  <action name="actSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/bg1.png</normaloff>:/images/images/bg1.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存所有图案，到playscene中</string>
+   </property>
+  </action>
+  <action name="actRestore">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/27623808008111.jpg</normaloff>:/images/images/27623808008111.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+   <property name="toolTip">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="actZoomln">
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actZoomOut">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/231.jpg</normaloff>:/images/images/231.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="whiteBrick">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/WriteBrick.png</normaloff>:/res/WriteBrick.png</iconset>
+   </property>
+   <property name="text">
+    <string>白色砖块</string>
+   </property>
+   <property name="toolTip">
+    <string>添加白色砖块</string>
+   </property>
+  </action>
+  <action name="blackBrick">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/BlackBrick.png</normaloff>:/res/BlackBrick.png</iconset>
+   </property>
+   <property name="text">
+    <string>黑色砖块</string>
+   </property>
+   <property name="toolTip">
+    <string>添加黑色砖块</string>
+   </property>
+  </action>
+  <action name="actResetStart">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/gameEnd.png</normaloff>:/res/gameEnd.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置开始位置</string>
+   </property>
+   <property name="toolTip">
+    <string>重置开始传送门的位置</string>
+   </property>
+  </action>
+  <action name="actResetEnd">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/gameStart.png</normaloff>:/res/gameStart.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置结束位置</string>
+   </property>
+   <property name="toolTip">
+    <string>重置结束传送门的位置</string>
+   </property>
+  </action>
+  <action name="companionCube">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/CompanionCube.png</normaloff>:/res/CompanionCube.png</iconset>
+   </property>
+   <property name="text">
+    <string>重力砖块</string>
+   </property>
+   <property name="toolTip">
+    <string>用于压压力板以达到开门等目的</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CreateGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>creategraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
